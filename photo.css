@@ -1,0 +1,43 @@
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.photo {
+    margin-top: 0%;
+    margin-bottom:  0px;
+    margin-left: 0%;
+    margin-right: -1%;
+    display: contents ;
+}
+.sora1 {
+    margin-top: 40px;
+    margin-left: 26%;
+    margin-bottom: 5px;
+    display: flex;
+    width: 320px;
+    height: 480px;
+    border-radius: 5px;
+}
+
+.sora2 {
+    margin-top: 15px;
+    margin-left:51%;
+    margin-bottom: 5px;
+    display: flex;
+    width: 320px;
+    height: 480px;
+    border-radius: 5px
+
+
+}
+
+.sora3 {
+    margin-top: -485px;
+    margin-left: 2%;
+    margin-bottom: 50px;
+    display: flex;
+    width: 320px;
+    height: 480px;
+    border-radius: 5px
+
+}

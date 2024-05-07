@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Shopping Website</title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="icon" type="image/x-icon" href="css/81-813129_retail-icon-red-png-download-shopping-logo-black-removebg-preview.png">
+        </head>
+    <body>
+        <header>
+            <div class="navbar">
+              <div class="logo">
+                  <img src="css/logo-removebg-preview.png"alt="logo" width="250px"height="px">
+              </div>
+              <nav>
+                <div class="search">
+                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"/>
+                      </svg>     
+                      <input class="search-input" type="search" placeholder="search">             
+                </div>
+                  <ul>
+                    <li><a href="" onclick="toggleMode(event)">
+                        <svg class="dark" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 21a9 9 0 0 1-.5-17.986V3c-.354.966-.5 1.911-.5 3a9 9 0 0 0 9 9c.239 0 .254.018.488 0A9.004 9.004 0 0 1 12 21Z"/>
+                          </svg>                          
+                    </a></li>
+                      <li><a href="HomePage.html">home</a></li>
+                      <li><a href="products.html">products</a></li>
+                      <li><a href="about.html">about</a></li>
+                      <li><a href="contact.html">contact</a></li>
+                      <li><a href="log new.html">log in</a></li>
+                  </ul>
+              </nav>
+              <div class = "icon_cart">
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"/>
+                  </svg>
+                </div>
+               </div>
+            </header>
+  <main>
+    <div class="account">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <img src="css/WhatsApp_Image_2024-04-25_at_14.32.17_05a4e604-removebg-preview.png" alt="sora" width="250%">
+          </div>
+          <div class="col">
+            <div class="form_container">
+              <div class="form-btn">
+                <span onclick="login()">Login</span>
+                <span onclick="register()">Register</span>
+                <hr id="indicator">
+              </div>
+              <form id="loginform" action="HomePage.html">
+                <input type="text" placeholder="Username">
+                <input type="password" placeholder="Password">
+                <button type="submit" class="btn">Login</button>
+                <a href="">Forgot password</a>
+              </form>
+              <form id="regform" onsubmit="login(); return false;">
+                <input type="text" placeholder="Username">
+                <input type="email" placeholder="E-mail">
+                <input type="password" placeholder="Password">
+                <button type="submit" class="btn">Register</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    var loginform = document.getElementById("loginform");
+    var regform = document.getElementById("regform");
+    var indicator = document.getElementById("indicator");
+
+    function register() {
+      regform.style.transform = "translateX(0px)";
+      loginform.style.transform = "translateX(0px)";
+      indicator.style.transform = "translateX(100px)";
+    }
+
+    function login() {
+      regform.style.transform = "translateX(300px)";
+      loginform.style.transform = "translateX(300px)";
+      indicator.style.transform = "translateX(0px)";
+    }
+
+    function toggleMode(event) {
+    event.preventDefault();
+    var body = document.body;
+    body.classList.toggle("light-mode");
+    body.classList.toggle("dark-mode");}
+  </script>
+</body>
+</html>

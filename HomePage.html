@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Shopping Website</title>
+        <link rel="stylesheet" href="HomePage.css">
+        <link rel="icon" type="image/x-icon" href="css/81-813129_retail-icon-red-png-download-shopping-logo-black-removebg-preview.png">
+        </head>
+    <body>
+        <header>
+            <div class="navbar">
+              <div class="logo">
+                  <img src="css/logo-removebg-preview.png"alt="logo" width="250px"height="px">
+              </div>
+              <nav>
+                <div class="search">
+                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"/>
+                      </svg>     
+                      <input class="search-input" type="search" placeholder="search">             
+                </div>
+                  <ul>
+                    <li><a href="" onclick="toggleMode(event)">
+                        <svg class="dark" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 21a9 9 0 0 1-.5-17.986V3c-.354.966-.5 1.911-.5 3a9 9 0 0 0 9 9c.239 0 .254.018.488 0A9.004 9.004 0 0 1 12 21Z"/>
+                          </svg>                          
+                    </a></li>
+                      <li><a href="HomePage.html">home</a></li>
+                      <li><a href="products.html">products</a></li>
+                      <li><a href="about.html">about</a></li>
+                      <li><a href="contact.html">contact</a></li>
+                      <li><a href="log new.html">log in</a></li>
+                  </ul>
+              </nav>
+              <div class = "icon_cart">
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"/>
+                  </svg>
+                </div>
+               </div>
+            </header>
+     <div class="k">
+        <div class="s">
+            <h1>Give Your Self A New<br> Style!</h1>
+            <p>Style is always in fashion. Fashions are born and they die too quickly for anyone to learn to love them. In matters of style swim with the current. In matters of principle, stand like a rock.</p> 
+        </div>
+        <div class="j"> <img src="css/WhatsApp_Image_2024-04-28_at_17.00.19_5a6e1bec-removebg-preview.png" alt="" > </div>
+        <video id="vedio" src="css/model vedio.mp4" width="55%" controls></video>
+    </div>
+    </div>
+    <main>
+        <section class="main">
+            <h2>Welcome to our Online Store</h2>
+        </section>
+
+        <section class="shopping">
+            <p>this is our best seller products</p>
+            <div class="container">
+
+            <div class="product">
+                <img src="https://ae01.alicdn.com/kf/HTB187jPQFXXXXa8XVXXq6xXFXXXV/Brand-child-girl-clothing-kid-baby-girl-summer-dress-infant-toddler-girl-princess-dress-Cotton-children.jpg" alt="Product 1" width="300" height="300">
+                <h3>dress</h3>
+                <p>$19.99</p>
+            </div>
+            <div class="product">
+                <img src="https://imgix.bustle.com/uploads/image/2019/6/14/90073241-e78c-4b78-b285-341c6581363d-original.jpg" alt="Product 2" width="300" height="300">
+               
+                <h3>crop top</h3>
+                <p>$24.99</p>
+            </div>
+            <div class="product">
+                <img src="https://th.bing.com/th/id/OIP.G_DV5MsqKLXiGUgnjCdiLgHaLH?w=667&h=1001&rs=1&pid=ImgDetMain" alt="product 3" width="300" height="300">
+                <h3>shirt</h3>
+                <p>$30.99</p>
+
+            </div>
+            </div>
+            <a href="products.html" class="shop">Shop Now</a>
+            
+        </section>
+    </main>
+
+    <footer>
+        <button class="h" type="button"
+        onclick="document.getElementById('demo').innerHTML=Date()">Date And Time</button>
+        <p id="demo"></p>
+        <p> our 2024 colection</p>
+    </footer>
+    <script>
+    function toggleMode(event) {
+    event.preventDefault();
+    var body = document.body;
+    body.classList.toggle("light-mode");
+    body.classList.toggle("dark-mode");}
+    </script>
+</body>
+</html>

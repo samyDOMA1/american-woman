@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Shopping Website</title>
+        <link rel="stylesheet" href="slama_men.css">
+        <link rel="icon" type="image/x-icon" href="css/81-813129_retail-icon-red-png-download-shopping-logo-black-removebg-preview.png">
+        </head>
+    <body>
+        <header>
+            <div class="navbar">
+              <div class="logo">
+                  <img src="css/logo-removebg-preview.png"alt="logo" width="250px"height="px">
+              </div>
+              <nav>
+                <div class="search">
+                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"/>
+                      </svg>     
+                      <input class="search-input" type="search" placeholder="search">             
+                </div>
+                  <ul>
+                    <li><a href="" onclick="toggleMode(event)">
+                        <svg class="dark" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 21a9 9 0 0 1-.5-17.986V3c-.354.966-.5 1.911-.5 3a9 9 0 0 0 9 9c.239 0 .254.018.488 0A9.004 9.004 0 0 1 12 21Z"/>
+                          </svg>                          
+                    </a></li>
+                      <li><a href="HomePage.html">home</a></li>
+                      <li><a href="products.html">products</a></li>
+                      <li><a href="about.html">about</a></li>
+                      <li><a href="contact.html">contact</a></li>
+                      <li><a href="log new.html">log in</a></li>
+                  </ul>
+              </nav>
+              <div class = "icon_cart">
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"/>
+                  </svg>
+                </div>
+               </div>
+            </header>
+    <!-- cart item details -->
+    <div class="cart-page">
+        <table class="product-table">
+            <tr>
+                <th>product</th>
+                <th>quantity</th>
+                <th>subtotal</th>
+            </tr>
+            <tr class="row">
+                <td>
+                    <div class="cart-info">
+                        <img src="css/abo2.jpg" alt="item">
+                        <div>
+                            <p>printed t-shirt</p>
+                            <small>price: 50.00$</small>
+                            <br>
+                            <a href="">remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" class="quantity-input" value="1"></td>
+                <td class="subtotal" data-price="50.00">$50.00</td>
+            </tr>
+        </table>
+        <!-- checkout  -->
+        <div class="total-price">
+            <p>Total</p>
+            <div class="value">200.00$</div>
+            <hr>
+            <div class="checkout"><a href="delivery.html" class="checkout-link">
+                    <div class="word">CONTINUE TO CHECKOUT</div>
+                </a></div>
+        </div>
+    </div>
+    <script>
+    function toggleMode(event) {
+    event.preventDefault();
+    var body = document.body;
+    body.classList.toggle("light-mode");
+    body.classList.toggle("dark-mode");}
+
+        function updatePrice() {
+            var quantities = document.querySelectorAll('.cart-page .quantity-input');
+            var subtotals = document.querySelectorAll('.cart-page .subtotal');
+            var total = 0;
+
+            for (var i = 0; i < quantities.length; i++) {
+                var quantity = parseInt(quantities[i].value);
+                var price = parseFloat(subtotals[i].dataset.price);
+                var subtotal = quantity * price;
+
+                subtotals[i].textContent = '$' + subtotal.toFixed(2);
+                total += subtotal;
+            }
+
+            document.querySelector('.total-price .value').textContent = '$' + total.toFixed(2);
+        }
+
+        var quantityInputs = document.querySelectorAll('.cart-page .quantity-input');
+        quantityInputs.forEach(function (input) {
+            input.addEventListener('change', updatePrice);
+        });
+
+        updatePrice();
+    </script>
+</body>
+
+</html>

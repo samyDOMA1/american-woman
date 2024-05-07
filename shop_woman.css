@@ -1,0 +1,248 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+}
+nav{
+    flex: 1;
+    position: absolute;
+    right: 30px;
+    font-size: large;
+}
+nav .search{
+    display: flex;
+    padding: 7px; 
+    border-radius: 28px;
+    background-color: #d8d0d0;
+    position: absolute;
+    right:461px;
+}
+.search :focus-within {
+    box-shadow: 0 0 3px rgba(0,0,0,0.75);
+}
+.search-input{
+    font-size: 16px;
+    color: #333333;
+    margin-left: 10px;
+    outline: none;
+    border: none;
+    background: transparent;
+    width: 250px;
+}
+.dark{
+    color: #910d0d;
+    position: absolute;
+    right:410px;
+    top:2px;
+}
+
+nav ul{
+    display: inline-block;
+    list-style-type: none ;
+    margin-bottom: 17px;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a{
+    color: rgb(119, 8, 41);
+    text-decoration: none;
+}
+p{
+    color: rgb(119, 8, 41);
+}
+header .icon_cart{
+    position: absolute;
+    right: 10px;
+    top: 31px;
+}
+.light-mode {
+    background-color:#ffffff;
+    color:#000000;
+}
+.dark-mode {
+    background-color:#000000;
+    color:#ffffff;
+}
+.continer{
+    max-width: 1900px;
+    margin-bottom: 400px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    /* padding: 10px; */
+    border-bottom: 1px solid black ;
+
+}
+
+.iframe {
+    border: 5px solid black;
+    margin-top:8% ;
+    margin-left: 6%;
+    margin-bottom: -23%;
+    margin-right: 0%;
+    width: 700px;
+    height: 634px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.all { 
+    text-align: left;
+    border-radius: 5px;
+    padding: 20px;
+    margin-left: 840px;
+    margin-right: 170px;
+    margin-top: -305px;
+}
+
+.Americanwomen {
+    font-family: 'Brush Script MT', cursive;
+    color: #a61b3f;
+}
+.T-SHIRT {
+    color: #a61b3f;
+}
+
+.prince {
+    font-family: Garamond, serif;
+    font-size:2rem;
+    color: #a61b3f;
+}
+
+.shipping {
+    font-size: 1rem;
+    font-family: Garamond, serif;
+    margin-top: 10px;
+    color: #a61b3f;
+}
+
+.size {
+    margin-bottom: 20px;
+    margin-top: 10px ;
+    font-size: 1rem ;
+    
+} 
+
+.size dl {
+    margin: 0;
+}
+  
+
+  
+.size select {
+    
+    width: 15%;
+    padding: 8px;
+    border: 1px solid #e21b38;
+    background-color: #e21b38;
+    box-sizing: border-box;
+    color: white;
+     
+}
+
+.color {
+    margin-bottom: 20px;
+} 
+  
+.color dt {
+    font-weight: bold;
+    margin-bottom: 5px;
+} 
+  
+ .color select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #e21b38;
+    /* border-radius: 4px; */
+    box-sizing: border-box;
+    background-color: #e21b38;
+    color: white;
+}
+
+.Quantity {
+    margin-bottom: 20px;
+}
+  
+.Quantity label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+  
+.Quantity input[type="number"] {
+    width: 100px;
+    padding: 8px;
+    border: 1px solid #e21b38;
+    /* border-radius: 4px; */
+    background-color: #e21b38;
+    color: white;
+}
+
+.BUY {
+    background-color: #e21b38;
+    border:1px solid #e21b38;
+    margin-left: 50px;
+    text-align: center;
+    width: 360px; 
+    height: 50px;
+    display: flex;
+}
+
+.BUYNOW {
+    /* margin-top: 14px; */
+    /* text-decoration: none; */
+    width: 360px; 
+    height: 50px;
+    color: white;
+}
+
+
+.BUY-NOW {
+    margin-top: 16px;
+}
+
+.para1 {
+    margin-top: 10px;
+    font-size: 12px;
+    text-align: center;
+    margin-left: 40px;
+    margin-right: 40px;
+    color: #a61b3f;
+}
+
+.imgs {
+    margin-left: 141px;
+}
+
+.BAYSOURCE {
+    text-align: center;
+    margin-top: 15px; 
+    width: 60px;
+    height: auto;
+
+}
+
+.para2 {
+    border: 0px solid;
+    padding: 60px;
+    margin-left: 54%;
+    margin-right: 7%;
+    color: #a61b3f; 
+}

@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+}
+nav{
+    flex: 1;
+    position: absolute;
+    right: 30px;
+    font-size: large;
+}
+nav .search{
+    display: flex;
+    padding: 7px; 
+    border-radius: 28px;
+    background-color: #d8d0d0;
+    position: absolute;
+    right:461px;
+}
+.search :focus-within {
+    box-shadow: 0 0 3px rgba(0,0,0,0.75);
+}
+.search-input{
+    font-size: 16px;
+    color: #333333;
+    margin-left: 10px;
+    outline: none;
+    border: none;
+    background: transparent;
+    width: 250px;
+}
+.dark{
+    color: #910d0d;
+    position: absolute;
+    right:410px;
+    top:2px;
+}
+
+nav ul{
+    display: inline-block;
+    list-style-type: none ;
+    margin-bottom: 17px;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a{
+    color: rgb(119, 8, 41);
+    text-decoration: none;
+}
+p{
+    color: rgb(119, 8, 41);
+}
+header .icon_cart{
+    position: absolute;
+    right: 10px;
+    top: 31px;
+}
+.light-mode {
+    background-color:#ffffff;
+    color:#000000;
+}
+.dark-mode {
+    background-color:#000000;
+    color:#ffffff;
+}
+.continer{
+    max-width: 1900px;
+    margin-bottom: 400px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    
+}
+
+.shippingpolicy {
+    text-align: center;
+    /* border: 1px solid black; */
+    font-size: xx-large;
+    margin-top: 100px;
+    margin-bottom: 65px;
+    font-family: Garamond, serif;
+}
+
+.ourpolicy {
+    /* border: 1px solid black; */
+    font-size:small;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 30%;
+    margin-right: 30%;
+    font-family: Garamond, serif;
+}
+
+
+.thepolicy {
+    /* border: 1px solid black; */
+    font-size: large;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 30%;
+    margin-right: 30%;
+    /* padding: 1%; */
+    /* font-weight: bold; */
+}
+
+.logoo {
+    /* border: 1px solid black; */
+    font-size: large;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-left:30%;
+    margin-right:30%;
+}
